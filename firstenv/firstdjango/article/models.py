@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Author(models.Model):
+  
   name = models.CharField(max_length=255)
   email = models.EmailField()
 
@@ -9,6 +10,7 @@ class Author(models.Model):
         return self.name
 
 class Article(models.Model):
+
     title = models.CharField(max_length=120)
     description = models.TextField()
     body = models.TextField()
